@@ -10,4 +10,10 @@ describe('Testing our HTTP API', () =>{
 
     expect(response.status).toEqual(200);
   });
+
+  it('Respond with status 200 to GET request at /data route', async () => {
+    const response = await request.get('/data');
+
+    expect(response.status).toEqual(200);
+  });
 });
