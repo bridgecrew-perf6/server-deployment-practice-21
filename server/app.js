@@ -9,7 +9,7 @@ app.get('/hello', (req, res, next) => {
 });
 
 app.get('/data', (req, res, next) => {
-  res.send('Welcome the data route my dude.');
+  res.send('Welcome the /data route my dude.');
 });
 
 module.exports = app;
